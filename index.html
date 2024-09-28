@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional if you want styling -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+            
+         h1 {
+      font-family: 'Arial', sans-serif; /* Professional font */
+      font-size: 48px; /* Large size for prominence */
+      font-weight: bold; /* Bold text */
+      color: red; /* Eye-catching blue */
+      text-transform: uppercase; /* Makes text all uppercase */
+      letter-spacing: 2px; /* Adds space between letters */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+      margin: 20px 0; /* Adds space around the heading */
+      border-bottom: 2px solid #0056b3; /* Underline the heading */
+      padding-bottom: 10px; /* Padding below for breathing room */
+      text-align: center;
+
+            
+        }
+
+        #searchBar {
+            display: block;
+            margin: 20px auto;
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .book-list li {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .book-list li:hover {
+            transform: scale(1.02);
+            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .book-list h3 {
+            color: #333;
+            margin: 0;
+        }
+
+        .book-list p {
+            color: #666;
+            margin: 5px 0 0;
+        }
+
+        @media (max-width: 600px) {
+            #searchBar {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ज्ञानोदय अभ्यासिका व मार्गदर्शन केंद्र</h1>
+    <input type="text" id="searchBar" placeholder="Search books..." onkeyup="searchBooks()">
+    <ul id="bookList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
